@@ -21,14 +21,14 @@ function loadMonsters(monsterObj){
         let name = monsterObj[monster]['name'];
         let age = monsterObj[monster]['age'];
         let desc = monsterObj[monster]['description'];
-        createMonsterDiv(name, age, desc);
+        createMonster(name, age, desc);
         
     }
 
 }
 
 
-function createMonsterDiv(monsterName, monsterAge, monsterDesc){
+function createMonster(monsterName, monsterAge, monsterDesc){
     let div = document.createElement('div');
     let name = document.createElement('h2');
     let age = document.createElement('h4');
@@ -79,7 +79,7 @@ function makeMonsterForm(){
         let age = document.getElementById('age').value;
         let desc = document.getElementById('description').value;
         addNewMonster(name, age, desc);
-        //document.querySelector('#monster-form').reset();
+        
     })
 
 }
